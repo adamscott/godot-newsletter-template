@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title>{{ .Campaign.Subject }}</title>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1">
+	<base target="_blank">
+
+	<link to-style-tag type="stylesheet" href="/src/style/main.scss">
+	<link to-html-tags type="stylesheet" href="/src/style/inline.scss">
+</head>
+
+<body>
+	<div class="gutter">&nbsp;</div>
+	<div class="container">
+		{{ template "content" . }}
+	</div>
+	<div class="footer">
+		<div class="unsubscribe-help">
+			{{ L.T "email.unsubHelp" }}
+			<a href="{{ UnsubscribeURL }}" class="unsubscribe-url">
+				{{ L.T "email.unsub" }}
+			</a>
+		</div>
+		<div class="view-in-browser">
+			<a href="{{ MessageURL }}" class="view-in-browser-url">{{ L.T "email.viewInBrowser" }}</a>
+		</div>
+		{{ TrackView }}
+	</div>
+</body>
+
+</html>

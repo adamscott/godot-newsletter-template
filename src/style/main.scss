@@ -1,0 +1,47 @@
+body {
+	font-family: 'Montserrat', 'Helvetica Neue', 'Segoe UI', Helvetica, sans-serif;
+	color: #435365;
+	line-height: 1.5;
+	font-size: 18px;
+}
+
+pre {
+	background: #f4f4f4f4;
+	padding: 2px;
+}
+
+a {
+	color: #3689c9;
+
+	&:hover {
+		filter: brightness(100%);
+	}
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	color: #546b99;
+	font-weight: bold;
+	font-weight: bolder;
+	font-weight: 800;
+}
+
+table {
+	width: 90%;
+	border-collapse: collapse;
+	margin: 0 auto;
+}
+
+thead {
+	font-weight: bold;
+}
+
+.container {
+	@media screen and (min-width: 900px) {
+		max-width: 900px;
+	}
+}
